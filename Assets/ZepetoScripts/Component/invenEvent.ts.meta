@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 73f5892d56c704ee593987f8942320a0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    invenEvent extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.invenBtn.onClick.AddListener(() => {\r\n            console.log(\"click
+    inven btn\");\r\n        });\r\n    }\r\n}\r\nexports.default = invenEvent;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW52ZW5FdmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImludmVuRXZlbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFFckQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtJQUl6RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtZQUNsQyxPQUFPLENBQUMsR0FBRyxDQUFDLGlCQUFpQixDQUFDLENBQUM7UUFDbkMsQ0FBQyxDQUFDLENBQUE7SUFDTixDQUFDO0NBRUo7QUFWRCw2QkFVQyJ9","assetPath":"Assets/ZepetoScripts/Component/invenEvent.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"invenBtn","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"invenEvent","description":""},"isCompiled":true}'
+  typescriptHash: 4be0fba18657fb4a1f3584c8a2e6dba4

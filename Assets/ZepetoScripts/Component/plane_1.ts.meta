@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 0b09349f16b8f4ac59dc64530fc71b59
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    plane_1 extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.dataColor = [\r\n           
+    \"red\",\r\n            \"orange\",\r\n            \"yellow\",\r\n           
+    \"green\",\r\n            \"blue\",\r\n            \"purple\",\r\n           
+    \"white\",\r\n            \"black\", //8\r\n        ];\r\n    }\r\n    randomData(min,
+    max) {\r\n        return Math.floor(Math.random() * (max - min)) + min;\r\n   
+    }\r\n    Start() {\r\n        this.getred.r = 255;\r\n        this.meterialValue.SetColor(\"_Color\",
+    this.getred);\r\n    }\r\n    Update() {\r\n    }\r\n}\r\nexports.default = plane_1;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxhbmVfMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInBsYW5lXzEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFHckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUExRDs7UUFFVyxjQUFTLEdBQWE7WUFDekIsS0FBSztZQUNMLFFBQVE7WUFDUixRQUFRO1lBQ1IsT0FBTztZQUNQLE1BQU07WUFDTixRQUFRO1lBQ1IsT0FBTztZQUNQLE9BQU8sRUFBQyxHQUFHO1NBQ2QsQ0FBQztJQXVDTixDQUFDO0lBckNXLFVBQVUsQ0FBQyxHQUFXLEVBQUUsR0FBVztRQUN2QyxPQUFPLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLENBQUMsR0FBRyxHQUFHLEdBQUcsQ0FBQyxDQUFDLEdBQUcsR0FBRyxDQUFDO0lBQ3pELENBQUM7SUEwQkQsS0FBSztRQUNELElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQyxHQUFHLEdBQUcsQ0FBQztRQUNwQixJQUFJLENBQUMsYUFBYSxDQUFDLFFBQVEsQ0FBQyxRQUFRLEVBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3RELENBQUM7SUFFRCxNQUFNO0lBRU4sQ0FBQztDQUVKO0FBbERELDBCQWtEQyJ9","assetPath":"Assets/ZepetoScripts/Component/plane_1.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"dataColor","type":"System.String[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"meterialValue","type":"UnityEngine.Material","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"getred","type":"UnityEngine.Color","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"plane_1","description":""},"isCompiled":true}'
+  typescriptHash: 77644abf898cef48bbb6583de353a5b6

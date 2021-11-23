@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 14c561c9b7049414ea14681b6f71fc94
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass testComponent extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n    }\r\n    Update()
+    {\r\n    }\r\n    RandomCreate() {\r\n        let randomSpon = UnityEngine_1.Random.Range(1,
+    7);\r\n        switch (randomSpon) {\r\n            case 1:\r\n            case
+    2:\r\n            case 3:\r\n            case 4:\r\n            case 5:\r\n           
+    case 6:\r\n            case 7:\r\n        }\r\n    }\r\n}\r\nexports.default
+    = testComponent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdENvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRlc3RDb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBb0M7QUFDcEMsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFFNUQsS0FBSztJQUVMLENBQUM7SUFFRCxNQUFNO0lBRU4sQ0FBQztJQUVELFlBQVk7UUFDUixJQUFJLFVBQVUsR0FBRyxvQkFBTSxDQUFDLEtBQUssQ0FBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUM7UUFFbkMsUUFBTyxVQUFVLEVBQUM7WUFDZCxLQUFLLENBQUMsQ0FBQztZQUNQLEtBQUssQ0FBQyxDQUFDO1lBQ1AsS0FBSyxDQUFDLENBQUM7WUFDUCxLQUFLLENBQUMsQ0FBQztZQUNQLEtBQUssQ0FBQyxDQUFDO1lBQ1AsS0FBSyxDQUFDLENBQUM7WUFDUCxLQUFLLENBQUMsQ0FBQztTQUNWO0lBQ0wsQ0FBQztDQUVKO0FBeEJELGdDQXdCQyJ9","assetPath":"Assets/ZepetoScripts/Component/testComponent.ts","manifest":{"properties":[],"name":"testComponent","description":""},"isCompiled":true}'
+  typescriptHash: a9d3ba46a9765e8833a0741e83e3fd18
