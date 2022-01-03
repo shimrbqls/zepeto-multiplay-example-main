@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: fa247c7d0993c4c56a3d4f4f0b0358b3
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    plane_2Component extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    whatis()
+    {\r\n        this.thisis = this.Owner;\r\n        console.log(this.thisis);\r\n   
+    }\r\n    stt() {\r\n        this.stringtest = \"Test sucessful\";\r\n       
+    console.log(this.stringtest);\r\n    }\r\n    Start() {\r\n        //this.colorObject
+    = this.gameObject.GetComponent<UnityEngine.Renderer>();\r\n        //Color setting
+    before game start\r\n        this.whatis();\r\n    }\r\n    Update() {\r\n       
+    //console.log(deltatime);\r\n        //var randomTemp:number = this.randomData(0,7);\r\n       
+    //this.switchColor(randomTemp);\r\n    }\r\n}\r\nexports.default = plane_2Component;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxhbmVfMkNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInBsYW5lXzJDb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBc0Q7QUFLdEQsTUFBcUIsZ0JBQWlCLFNBQVEscUNBQXFCO0lBc0V4RCxNQUFNO1FBQ1QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDO1FBQ3pCLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQzdCLENBQUM7SUFFTSxHQUFHO1FBQ04sSUFBSSxDQUFDLFVBQVUsR0FBRyxnQkFBZ0IsQ0FBQztRQUNuQyxPQUFPLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQztJQUNqQyxDQUFDO0lBRUQsS0FBSztRQUNELDBFQUEwRTtRQUMxRSxpQ0FBaUM7UUFDakMsSUFBSSxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBQ2xCLENBQUM7SUFFRCxNQUFNO1FBQ0YseUJBQXlCO1FBQ3pCLCtDQUErQztRQUMvQywrQkFBK0I7SUFDbkMsQ0FBQztDQUNKO0FBM0ZELG1DQTJGQyJ9","assetPath":"Assets/ZepetoScripts/Component/plane_2Component.ts","manifest":{"properties":[{"assembly":"","name":"thisis","type":"Object","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"stringtest","type":"String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"plane_2Component","description":""},"isCompiled":true}'
+  typescriptHash: e2e2ce247d3e7e876816fc030d82629d

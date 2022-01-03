@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa247c7d0993c4c56a3d4f4f0b0358b3
+guid: 76661219a04864f9aab7782daea53193
 importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
 ScriptedImporter:
   internalIDToNameTable: []
@@ -20,6 +20,6 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
-    plane_2 extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n   
-    }\r\n}\r\nexports.default = plane_2;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxhbmVfMi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInBsYW5lXzIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUV0RCxLQUFLO0lBRUwsQ0FBQztDQUVKO0FBTkQsMEJBTUMifQ==","assetPath":"Assets/ZepetoScripts/Component/plane_2.ts","manifest":{"properties":[],"name":"plane_2","description":""},"isCompiled":true}'
-  typescriptHash: fb7514f532b3076ffc0607d063f41312
+    arrayObject extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n   
+    }\r\n}\r\nexports.default = arrayObject;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXJyYXlPYmplY3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJhcnJheU9iamVjdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixXQUFZLFNBQVEscUNBQXFCO0lBRTFELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFORCw4QkFNQyJ9","assetPath":"Assets/ZepetoScripts/scriptObject/arrayObject.ts","manifest":{"properties":[],"name":"arrayObject","description":""},"isCompiled":true}'
+  typescriptHash: db509e677b7e2316a98f7343ae9daf3a

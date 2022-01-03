@@ -20,13 +20,55 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
-    plane_1 extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
-    {\r\n        super(...arguments);\r\n        this.dataColor = [\r\n           
-    \"red\",\r\n            \"orange\",\r\n            \"yellow\",\r\n           
-    \"green\",\r\n            \"blue\",\r\n            \"purple\",\r\n           
-    \"white\",\r\n            \"black\", //8\r\n        ];\r\n    }\r\n    randomData(min,
-    max) {\r\n        return Math.floor(Math.random() * (max - min)) + min;\r\n   
-    }\r\n    Start() {\r\n        this.getred.r = 255;\r\n        this.meterialValue.SetColor(\"_Color\",
-    this.getred);\r\n    }\r\n    Update() {\r\n    }\r\n}\r\nexports.default = plane_1;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxhbmVfMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInBsYW5lXzEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFHckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUExRDs7UUFFVyxjQUFTLEdBQWE7WUFDekIsS0FBSztZQUNMLFFBQVE7WUFDUixRQUFRO1lBQ1IsT0FBTztZQUNQLE1BQU07WUFDTixRQUFRO1lBQ1IsT0FBTztZQUNQLE9BQU8sRUFBQyxHQUFHO1NBQ2QsQ0FBQztJQXVDTixDQUFDO0lBckNXLFVBQVUsQ0FBQyxHQUFXLEVBQUUsR0FBVztRQUN2QyxPQUFPLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLENBQUMsR0FBRyxHQUFHLEdBQUcsQ0FBQyxDQUFDLEdBQUcsR0FBRyxDQUFDO0lBQ3pELENBQUM7SUEwQkQsS0FBSztRQUNELElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQyxHQUFHLEdBQUcsQ0FBQztRQUNwQixJQUFJLENBQUMsYUFBYSxDQUFDLFFBQVEsQ0FBQyxRQUFRLEVBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3RELENBQUM7SUFFRCxNQUFNO0lBRU4sQ0FBQztDQUVKO0FBbERELDBCQWtEQyJ9","assetPath":"Assets/ZepetoScripts/Component/plane_1.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"dataColor","type":"System.String[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"meterialValue","type":"UnityEngine.Material","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"getred","type":"UnityEngine.Color","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"plane_1","description":""},"isCompiled":true}'
-  typescriptHash: 77644abf898cef48bbb6583de353a5b6
+    plane_1 extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    // public monobehaviourValue:
+    MonoBehaviour;\r\n    // public behaviourValue: Behaviour;\r\n    // public componentValue:
+    Component;\r\n    // public objectValue: Object;\r\n    // public scripableobjectValue:
+    ScriptableObject;\r\n    // public vector2Value: Vector2;\r\n    // public vector3Value:
+    Vector3;\r\n    // public texture2dValue: Texture2D;\r\n    // public textureValue:
+    Texture;\r\n    // public animatorValue: Animator;\r\n    // public charactercontroller:
+    CharacterController;\r\n    // public colliderValue: Collider;\r\n    // public
+    quaternionValue: Quaternion;\r\n    // public animationclipValue: AnimationClip;\r\n   
+    // public motionValue: Motion;\r\n    // public cameraValue: Camera;\r\n    //
+    public transformValue: Transform;\r\n    // public gameObjectValue: GameObject;\r\n   
+    // public LayerMask: LayerMask;\r\n    // public runtimeAnimatorController: RuntimeAnimatorController;\r\n   
+    //public floorplane: GameObject;\r\n    //public planeint: UnityEngine.Plane;\r\n   
+    // private CreatePlane(floorcount:number){\r\n    //      for(var i=1;i>floorcount;i++){\r\n   
+    //          Object.Instantiate(this.floorplane);\r\n    //         //  const
+    planeValue = new floorPlane();\r\n    //         //  planeValue.transform.position.x
+    = 50;\r\n    //         //  planeValue.transform.position.y = 0;\r\n    //        
+    //  planeValue.transform.position.z = 50;\r\n    //         //  planeValue.transform.scale.x
+    = 5;\r\n    //         //  planeValue.transform.scale.y = 0;\r\n    //        
+    //  planeValue.transform.scale.z = 5;\r\n    //         const Mesh = new UnityEngine.Mesh;\r\n   
+    //         const MeshRender = new UnityEngine.MeshRenderer;\r\n    //        
+    const MeshVector3_1 = new UnityEngine.Vector3(-1,1,0);\r\n    //         const
+    MeshVector3_2 = new UnityEngine.Vector3(1,1,0);\r\n    //         const MeshVector3_3
+    = new UnityEngine.Vector3(-1,-1,0);\r\n    //         const MeshVector3_4 = new
+    UnityEngine.Vector3(1,-1,0);\r\n    //         Mesh.SetVertices({\r\n    //            
+    MeshVector3_1,\r\n    //             MeshVector3_2,\r\n    //             MeshVector3_3,\r\n   
+    //             MeshVector3_4\r\n    //         });\r\n    //         const MeshVector2_1
+    = new UnityEngine.Vector2(0,1);\r\n    //         const MeshVector2_2 = new UnityEngine.Vector2(1,1);\r\n   
+    //         const MeshVector2_3 = new UnityEngine.Vector2(0,0);\r\n    //        
+    const MeshVector2_4 = new UnityEngine.Vector2(1,0);\r\n    //         Mesh.SetUVs(0,{\r\n   
+    //             MeshVector2_1,\r\n    //             MeshVector2_2,\r\n    //            
+    MeshVector2_3,\r\n    //             MeshVector2_4\r\n    //         });\r\n   
+    //         Mesh.SetTriangles({\r\n    //             0:0,\r\n    //            
+    1:1,\r\n    //             2:2,\r\n    //             3:2,\r\n    //            
+    4:1,\r\n    //             5:3\r\n    //         },1);\r\n    //         Mesh.RecalculateNormals();\r\n   
+    //         console.log(Mesh);\r\n    //         const MeshFilter = new UnityEngine.MeshFilter;\r\n   
+    //         MeshFilter.mesh = Mesh;\r\n    //         const planePosition = new
+    UnityEngine.Vector3(50,0,50);\r\n    //         const planeScale = new UnityEngine.Vector3(5,0,5);\r\n   
+    //         const planeint = new UnityEngine.Plane(planePosition,planeScale);\r\n   
+    //     }\r\n    // }\r\n    // // public meterialValue: Material;\r\n    // //
+    public colorObject : UnityEngine.Color;\r\n    // private selectColor(){\r\n   
+    //     const getRed = new UnityEngine.Color(255,0,0);\r\n    //     const meterialValue
+    = new UnityEngine.Material;\r\n    //     meterialValue.color = getRed;\r\n   
+    // } \r\n    // public meterialValue = new UnityEngine.Material;\r\n    // public
+    tempObj = new GameObject();\r\n    Start() {\r\n        // this.getred.r = 255;\r\n       
+    // this.getred.g = 0;\r\n        // this.getred.b = 0;\r\n        // this.meterialValue.SetColor(\"_Color\",this.getred);\r\n       
+    //this.planeObject.normal(100,100,100);\r\n        //this.CreatePlane(9);\r\n       
+    // const planeNormal = new UnityEngine.Vector3(0,0,0);\r\n        // const planePoint
+    = new UnityEngine.Vector3(0,0,0);\r\n        // const planeint = new UnityEngine.Plane(planeNormal,planePoint);\r\n       
+    // var planeintnormal: Vector3 = planeint.normal;\r\n        // console.log(planeintnormal);\r\n       
+    //const obj = Object.Instantiate(this.tempObj);\r\n    }\r\n    Update() {\r\n   
+    }\r\n}\r\nexports.default = plane_1;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGxhbmVfMS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInBsYW5lXzEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFLckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUV0RCw0Q0FBNEM7SUFDNUMsb0NBQW9DO0lBQ3BDLG9DQUFvQztJQUNwQyw4QkFBOEI7SUFDOUIsaURBQWlEO0lBQ2pELGdDQUFnQztJQUNoQyxnQ0FBZ0M7SUFDaEMsb0NBQW9DO0lBQ3BDLGdDQUFnQztJQUNoQyxrQ0FBa0M7SUFDbEMsbURBQW1EO0lBQ25ELGtDQUFrQztJQUNsQyxzQ0FBc0M7SUFDdEMsNENBQTRDO0lBQzVDLDhCQUE4QjtJQUM5Qiw4QkFBOEI7SUFDOUIsb0NBQW9DO0lBQ3BDLHNDQUFzQztJQUN0QywrQkFBK0I7SUFDL0IsK0RBQStEO0lBRS9ELGdDQUFnQztJQUNoQyxxQ0FBcUM7SUFDckMsMENBQTBDO0lBQzFDLHNDQUFzQztJQUN0QyxnREFBZ0Q7SUFFaEQsbURBQW1EO0lBQ25ELG9EQUFvRDtJQUNwRCxtREFBbUQ7SUFDbkQsb0RBQW9EO0lBQ3BELGdEQUFnRDtJQUNoRCxnREFBZ0Q7SUFDaEQsZ0RBQWdEO0lBQ2hELDZDQUE2QztJQUM3QywyREFBMkQ7SUFDM0QsaUVBQWlFO0lBQ2pFLGdFQUFnRTtJQUNoRSxrRUFBa0U7SUFDbEUsaUVBQWlFO0lBQ2pFLDZCQUE2QjtJQUM3Qiw2QkFBNkI7SUFDN0IsNkJBQTZCO0lBQzdCLDZCQUE2QjtJQUM3Qiw0QkFBNEI7SUFDNUIsY0FBYztJQUNkLDhEQUE4RDtJQUM5RCw4REFBOEQ7SUFDOUQsOERBQThEO0lBQzlELDhEQUE4RDtJQUM5RCwwQkFBMEI7SUFDMUIsNkJBQTZCO0lBQzdCLDZCQUE2QjtJQUM3Qiw2QkFBNkI7SUFDN0IsNEJBQTRCO0lBQzVCLGNBQWM7SUFFZCw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBRWhCLHFDQUFxQztJQUNyQyw2QkFBNkI7SUFDN0IseURBQXlEO0lBQ3pELGtDQUFrQztJQUVsQyxrRUFBa0U7SUFDbEUsNkRBQTZEO0lBQzdELDRFQUE0RTtJQUM1RSxRQUFRO0lBQ1IsSUFBSTtJQUVKLHFDQUFxQztJQUNyQyw2Q0FBNkM7SUFFN0MseUJBQXlCO0lBQ3pCLHFEQUFxRDtJQUNyRCxzREFBc0Q7SUFDdEQsb0NBQW9DO0lBQ3BDLEtBQUs7SUFFTCxtREFBbUQ7SUFDbkQscUNBQXFDO0lBQ3JDLEtBQUs7UUFDRCx1QkFBdUI7UUFDdkIscUJBQXFCO1FBQ3JCLHFCQUFxQjtRQUNyQixxREFBcUQ7UUFDckQsdUNBQXVDO1FBQ3ZDLHNCQUFzQjtRQUN0QixzREFBc0Q7UUFDdEQscURBQXFEO1FBQ3JELGtFQUFrRTtRQUNsRSxpREFBaUQ7UUFDakQsK0JBQStCO1FBQy9CLCtDQUErQztJQUVuRCxDQUFDO0lBRUQsTUFBTTtJQUVOLENBQUM7Q0FFSjtBQTlHRCwwQkE4R0MifQ==","assetPath":"Assets/ZepetoScripts/Component/plane_1.ts","manifest":{"properties":[],"name":"plane_1","description":""},"isCompiled":true}'
+  typescriptHash: 3313240a13480c20ae33fd395dbff907

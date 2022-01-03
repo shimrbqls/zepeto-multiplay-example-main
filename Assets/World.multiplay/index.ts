@@ -13,21 +13,11 @@ export default class extends Sandbox {
     private oneMin: number = 0;
     private playerCount: number = 0;
     private nowGameState: string = "none";
-    public dataColor: string[] = [
-        "red", //1
-        "orange", //2
-        "yellow", //3
-        "green", //4
-        "blue", //5
-        "purple", //6
-        "white", //7
-        "black",//8
-    ];
 
     private randomData(min: number, max: number) {
         return Math.floor(Math.random() * (max - min)) + min;
       }
-    public 
+
     public gameMap: string;
     public ranMap: number;
 
@@ -89,7 +79,7 @@ export default class extends Sandbox {
         //플레이어 객체를 생성해주고 플레이어 정보값에 맞는 해쉬 유저 새션아이디를 입
 
         // storage에 입장 유저의 transform이 존재하는 지 확인한 다음, 갱신합니다.
-        const raw_val = await storage.get("transform") as string;
+          const raw_val = await storage.get("transform") as string;
         const json_val = raw_val != null ? JSON.parse(raw_val) : JSON.parse("{}");
 
         const transform = new Transform();
@@ -137,46 +127,55 @@ export default class extends Sandbox {
         if(this.nowGameState == "playing"){
             this.oneSec += deltaTime.valueOf();
             if(this.oneSec>1000){ // 1sec interval
-                //this.broadcast("MoveTo",this.oneSec);
-                this.oneSec = 0;
             }
 
 
             this.oneMin += deltaTime.valueOf();
             if(this.oneMin>60000){
                 console.log("게임컬러를 선택합니다.");
-                let ranColor:number;
-                let gameColor:string;
-                ranColor = this.randomData(1,8);
-                switch(ranColor){
-                    case 1:
-                        gameColor = this.dataColor[0];
-                        break;
-                    case 2:
-                        gameColor = this.dataColor[1];
-                        break;
-                    case 3:
-                        gameColor = this.dataColor[2];
-                        break;
-                    case 4:
-                        gameColor = this.dataColor[3];
-                        break;
-                    case 5:
-                        gameColor = this.dataColor[4];
-                        break;
-                    case 6:
-                        gameColor = this.dataColor[5];
-                        break;
-                    case 7:
-                        gameColor = this.dataColor[6];
-                        break;
-                    case 8:
-                        gameColor = this.dataColor[7];
-                        break;
+                var gameColor:string;
+                var ranColor: Array<number> = [];
+                var i: number;
+                for(i=0;i<9;i++){
+                    ranColor[i] = this.randomData(1,8);
                 }
-                console.log(`${gameColor}가 선택되었습니다. 해당 칸으로 이동해주세요.`)
-                this.broadcast("MoveTo",this.oneMin);
+                gameColor = `${ranColor[0]},${ranColor[1]},${ranColor[2]},${ranColor[3]},${ranColor[4]},${ranColor[5]},${ranColor[6]},${ranColor[7]},${ranColor[8]}`;
+                console.log(`${gameColor}가 선택되었습니다. 해당 칸으로 이동해주세요.`);
+                this.broadcast("MoveTo",gameColor);
                 this.oneMin = 0;
+                // console.log("게임컬러를 선택합니다.");
+                // let ranColor:number;
+                // let gameColor:string;
+                // ranColor = this.randomData(1,8);
+                // switch(ranColor){
+                //     case 1:
+                //         gameColor = this.dataColor[0];
+                //         break;
+                //     case 2:
+                //         gameColor = this.dataColor[1];
+                //         break;
+                //     case 3:
+                //         gameColor = this.dataColor[2];
+                //         break;
+                //     case 4:
+                //         gameColor = this.dataColor[3];
+                //         break;
+                //     case 5:
+                //         gameColor = this.dataColor[4];
+                //         break;
+                //     case 6:
+                //         gameColor = this.dataColor[5];
+                //         break;
+                //     case 7:
+                //         gameColor = this.dataColor[6];
+                //         break;
+                //     case 8:
+                //         gameColor = this.dataColor[7];
+                //         break;
+                // }
+                // console.log(`${gameColor}가 선택되었습니다. 해당 칸으로 이동해주세요.`)
+                //this.broadcast("MoveTo",ranColor);
+                //this.oneMin = 0;
             }
         }
     }

@@ -1,6 +1,6 @@
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 
-export default class plane_2 extends ZepetoScriptBehaviour {
+export default class arrayObject extends ZepetoScriptBehaviour {
 
     Start() {    
 

@@ -5,6 +5,8 @@ import {Player, State, Vector3} from 'ZEPETO.Multiplay.Schema'
 import {CharacterState, SpawnInfo, ZepetoPlayers, ZepetoPlayer} from 'ZEPETO.Character.Controller'
 import * as UnityEngine from "UnityEngine";
 import storeEvent from './Component/storeEvent';
+import plane_2Component from "./Component/plane_2Component";
+import { Scene, SceneManager } from 'UnityEngine.SceneManagement'
 import { Button } from 'UnityEngine.UI'
 
 
@@ -15,8 +17,56 @@ export default class Starter extends ZepetoScriptBehaviour {
     private room: Room;
     private currentPlayers: Map<string, Player> = new Map<string, Player>();
 
+     //Renderer Object Select
+     public plane1: UnityEngine.Renderer;
+     public plane2: UnityEngine.Renderer;
+     public plane3: UnityEngine.Renderer;
+     public plane4: UnityEngine.Renderer;
+     public plane5: UnityEngine.Renderer;
+     public plane6: UnityEngine.Renderer;
+     public plane7: UnityEngine.Renderer;
+     public plane8: UnityEngine.Renderer;
+     public plane9: UnityEngine.Renderer;
+
+     //
+     private plane1Object: plane_2Component;
+     //private teststring: string;
+
+
+     //color Object init
+     public getRed :UnityEngine.Color;
+     public getOrange :UnityEngine.Color;
+     public getYellow :UnityEngine.Color;
+     public getGreen :UnityEngine.Color;
+     public getBlue :UnityEngine.Color;
+     public getPurple :UnityEngine.Color;
+     public getWhite :UnityEngine.Color;
+     public getBlack :UnityEngine.Color;
+
     private Start() {
+
+        this.getRed = UnityEngine.Color.red;
+
+        this.getOrange.r = 255;
+        this.getOrange.g = 140;
+        this.getOrange.b = 0;
+
+        this.getYellow = UnityEngine.Color.yellow;
+        this.getGreen = UnityEngine.Color.green;
+        this.getBlue = UnityEngine.Color.blue;
+
+        this.getPurple.r = 128;
+        this.getPurple.g = 0;
+        this.getPurple.b = 128;
+
+        this.getWhite = UnityEngine.Color.white;
+        this.getBlack = UnityEngine.Color.black;
+
         this.multiplay = this.gameObject.GetComponent<ZepetoWorldMultiplay>();
+        //this.plane1Object = UnityEngine.GameObject.FindObjectOfType<plane_2Component>();
+        // this.plane1Object = UnityEngine.GameObject.FindObjectOfType
+        // this.plane1 = UnityEngine.GameObject.FindObjectOfType<UnityEngine.Renderer>();
+        // this.plane1.
         this.multiplay.RoomCreated += (room: Room) => {
             this.room = room;
         };
@@ -36,15 +86,69 @@ export default class Starter extends ZepetoScriptBehaviour {
 
             room.AddMessageHandler("MoveTo",(message)=>{
                 console.log(message);
-                time++;
-                room.Send("MoveTo",time);
-                if(time > 9){
-                    room.Send("MoveTo",time);
-                    time = 0;
-                }
+                //time++;
+                //room.Send("MoveTo",time);
+                // if(time > 9){
+                //     room.Send("MoveTo",time);
+                //     time = 0;
+                // }
+                message = String(message);
+                console.log(typeof message);
+                console.log(message);
+                var ranNumber = message.split(`,`); 
+                // this.switchColor(ranNumber[0],this.plane1);
+                // this.switchColor(ranNumber[1],this.plane2);
+                // this.switchColor(ranNumber[2],this.plane3);
+                // this.switchColor(ranNumber[3],this.plane4);
+                // this.switchColor(ranNumber[4],this.plane5);
+                // this.switchColor(ranNumber[5],this.plane6);
+                // this.switchColor(ranNumber[6],this.plane7);
+                // this.switchColor(ranNumber[7],this.plane8);
+                // this.switchColor(ranNumber[8],this.plane9);
             })
         };
-        this.StartCoroutine(this.SendMessageLoop(0.3));
+        this.StartCoroutine(this.SendMessageLoop(0.1));
+    }
+
+    private convertMessage(Value:Object){
+        
+    }
+
+    private switchColor(randomValue:string,planeObject:UnityEngine.Renderer){
+        switch(randomValue){
+            case "1" :
+                planeObject.material.color = this.getRed;
+                console.log("get RED");
+                break;
+            case "2" :
+                planeObject.material.color = this.getOrange;
+                console.log("get Orange");
+                break;
+            case "3" :
+                planeObject.material.color = this.getYellow;
+                console.log("get YELLOW");
+                break;
+            case "4" :
+                planeObject.material.color = this.getGreen;
+                console.log("get Green");
+                break;
+            case "5" :
+                planeObject.material.color = this.getBlue;
+                console.log("get Blue");
+                break;
+            case "6" :
+                planeObject.material.color = this.getPurple;
+                console.log("get Purple");
+                break;
+            case "7" :
+                planeObject.material.color = this.getWhite;
+                console.log("get White");
+                break;
+            case "8" :
+                planeObject.material.color = this.getBlack;
+                console.log("get Black");
+                break;
+        }
     }
 
     // 일정 Interval Time으로 내(local)캐릭터 transform을 server로 전송합니다.
